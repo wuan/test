@@ -1,0 +1,18 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check Out Source Code
+        uses: actions/checkout@v4
+      - name: Test
+        uses: wuan/test-action
