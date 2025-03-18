@@ -15,4 +15,4 @@ jobs:
       - name: Check Out Source Code
         uses: actions/checkout@v4
       - name: Test
-        uses: wuan/test-action
+        uses: wuan/test-action@v1
